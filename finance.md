@@ -262,7 +262,7 @@ response:
 }
 ```
 
-**API: /payment/v2/item/finance/approve/batch/approve	**
+**API: /payment/v2/item/finance/approve/batch/approve**
 
 request:
 
