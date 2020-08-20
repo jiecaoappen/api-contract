@@ -2,13 +2,15 @@
 
 **API: /payment/v2/project/get/finance	GET**
 
-reuqest: no change
+reuqest:
+
+new RequestParam "isRow(boolean)"
 
 response:
 ``` json
 {
   "data": {
-    "rowProjects": [
+    "projects": [
       {
         "id": "string",
         "paymentJobDTOList": [
@@ -18,7 +20,7 @@ response:
             "id": "string",
             "jobActiveStatus": "string",
             "jobContactEmail": "string",
-            "jobCreatedTime": "2020-08-20T03:24:51.617Z",
+            "jobCreatedTime": "2020-08-20T04:11:51.407Z",
             "jobCreatorId": "string",
             "jobId": "string",
             "jobName": "string",
@@ -29,7 +31,7 @@ response:
             "jobTenantType": "string",
             "jobType": "string",
             "jobVersion": "string",
-            "lastOperationTime": "2020-08-20T03:24:51.618Z",
+            "lastOperationTime": "2020-08-20T04:11:51.407Z",
             "paymentPeriodId": "string",
             "paymentPeriodOrder": 0,
             "paymentPeriodYear": 0,
@@ -42,7 +44,7 @@ response:
           }
         ],
         "projectActiveStatus": "string",
-        "projectCreatedTime": "2020-08-20T03:24:51.618Z",
+        "projectCreatedTime": "2020-08-20T04:11:51.407Z",
         "projectId": "string",
         "projectName": "string",
         "projectOwnerId": "string",
@@ -50,58 +52,16 @@ response:
         "version": 0
       }
     ],
-    "totalCount": 0,
-    "weChatProjects": [
-      {
-        "id": "string",
-        "paymentJobDTOList": [
-          {
-            "currentTlEmail": "string",
-            "currentTlId": "string",
-            "id": "string",
-            "jobActiveStatus": "string",
-            "jobContactEmail": "string",
-            "jobCreatedTime": "2020-08-20T03:24:51.618Z",
-            "jobCreatorId": "string",
-            "jobId": "string",
-            "jobName": "string",
-            "jobPaymentStatus": "NEW",
-            "jobPaymentType": "BY_COUNT",
-            "jobRowFlag": true,
-            "jobStatus": "string",
-            "jobTenantType": "string",
-            "jobType": "string",
-            "jobVersion": "string",
-            "lastOperationTime": "2020-08-20T03:24:51.618Z",
-            "paymentPeriodId": "string",
-            "paymentPeriodOrder": 0,
-            "paymentPeriodYear": 0,
-            "projectId": "string",
-            "projectName": "string",
-            "submitterEmail": "string",
-            "totalAmount": 0,
-            "totalApprovedAmount": 0,
-            "version": 0
-          }
-        ],
-        "projectActiveStatus": "string",
-        "projectCreatedTime": "2020-08-20T03:24:51.618Z",
-        "projectId": "string",
-        "projectName": "string",
-        "projectOwnerId": "string",
-        "projectWorkdayId": "string",
-        "version": 0
-      }
-    ]
+    "totalCount": 0
   },
   "message": "string",
   "status": 0,
-  "time": "2020-08-20T03:24:51.618Z",
+  "time": "2020-08-20T04:11:51.407Z",
   "traceId": "string"
 }
 ```
 
-**API: /payment/v2/project/get/finance/all	GET**
+**API: /payment/v2/job/count/pending/finance	GET**
 
 reuqest: no change
 
@@ -109,95 +69,12 @@ response:
 ``` json
 {
   "data": {
-    "rowProjects": [
-      {
-        "id": "string",
-        "paymentJobDTOList": [
-          {
-            "currentTlEmail": "string",
-            "currentTlId": "string",
-            "id": "string",
-            "jobActiveStatus": "string",
-            "jobContactEmail": "string",
-            "jobCreatedTime": "2020-08-20T03:24:51.617Z",
-            "jobCreatorId": "string",
-            "jobId": "string",
-            "jobName": "string",
-            "jobPaymentStatus": "NEW",
-            "jobPaymentType": "BY_COUNT",
-            "jobRowFlag": true,
-            "jobStatus": "string",
-            "jobTenantType": "string",
-            "jobType": "string",
-            "jobVersion": "string",
-            "lastOperationTime": "2020-08-20T03:24:51.618Z",
-            "paymentPeriodId": "string",
-            "paymentPeriodOrder": 0,
-            "paymentPeriodYear": 0,
-            "projectId": "string",
-            "projectName": "string",
-            "submitterEmail": "string",
-            "totalAmount": 0,
-            "totalApprovedAmount": 0,
-            "version": 0
-          }
-        ],
-        "projectActiveStatus": "string",
-        "projectCreatedTime": "2020-08-20T03:24:51.618Z",
-        "projectId": "string",
-        "projectName": "string",
-        "projectOwnerId": "string",
-        "projectWorkdayId": "string",
-        "version": 0
-      }
-    ],
-    "totalCount": 0,
-    "weChatProjects": [
-      {
-        "id": "string",
-        "paymentJobDTOList": [
-          {
-            "currentTlEmail": "string",
-            "currentTlId": "string",
-            "id": "string",
-            "jobActiveStatus": "string",
-            "jobContactEmail": "string",
-            "jobCreatedTime": "2020-08-20T03:24:51.618Z",
-            "jobCreatorId": "string",
-            "jobId": "string",
-            "jobName": "string",
-            "jobPaymentStatus": "NEW",
-            "jobPaymentType": "BY_COUNT",
-            "jobRowFlag": true,
-            "jobStatus": "string",
-            "jobTenantType": "string",
-            "jobType": "string",
-            "jobVersion": "string",
-            "lastOperationTime": "2020-08-20T03:24:51.618Z",
-            "paymentPeriodId": "string",
-            "paymentPeriodOrder": 0,
-            "paymentPeriodYear": 0,
-            "projectId": "string",
-            "projectName": "string",
-            "submitterEmail": "string",
-            "totalAmount": 0,
-            "totalApprovedAmount": 0,
-            "version": 0
-          }
-        ],
-        "projectActiveStatus": "string",
-        "projectCreatedTime": "2020-08-20T03:24:51.618Z",
-        "projectId": "string",
-        "projectName": "string",
-        "projectOwnerId": "string",
-        "projectWorkdayId": "string",
-        "version": 0
-      }
-    ]
+    "rowFinanceCount": 0,
+    "weChatFinanceCount": 0
   },
   "message": "string",
   "status": 0,
-  "time": "2020-08-20T03:24:51.618Z",
+  "time": "2020-08-20T04:13:19.029Z",
   "traceId": "string"
 }
 ```
