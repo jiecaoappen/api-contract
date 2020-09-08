@@ -26,7 +26,7 @@ request param :
 
     assign jobId and emailVO(don't assign emailSet)
 
-2. send to workers of some condition
+2. send to workers in some condition
 
     assign jobId and (status or applyTime or lastEmailTime) and emailVO(don't assign emailSet)
 
