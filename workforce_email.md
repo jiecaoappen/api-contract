@@ -7,8 +7,8 @@ request param :
   String jobId,
   List<JobAssignStatus> status,
   boolean isPublic,
-  Instant applyTime,
-  Instant lastEmailTime,
+  ZonedDateTime applyTime,
+  ZonedDateTime lastEmailTime,
  
  request body emailVO: 
  {
@@ -49,8 +49,8 @@ request param :
  request body condition: 
  {
     List<JobAssignStatus> statusList,
-    Instant applyTime,
-    Instant lastEmailTime,
+    ZonedDateTime applyTime,
+    ZonedDateTime lastEmailTime,
     String email
  }
 
