@@ -7,8 +7,6 @@ request param :
   String jobId,
   List<JobAssignStatus> status,
   boolean isPublic,
-  int pageSize,
-  int pageIndex,
   Instant applyTime,
   Instant lastEmailTime,
  
