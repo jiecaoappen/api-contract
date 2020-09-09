@@ -5,6 +5,7 @@
 ```javascript
 request param : 
   String jobId,
+  String email,
   List<JobAssignStatus> status,
   boolean isPublic,
   ZonedDateTime applyTimeStart,
